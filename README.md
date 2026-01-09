@@ -22,10 +22,10 @@ As seen in the magnitude response picture above, it is clear that the notch filt
 
 ___
 ### Low Pass Filter
-The low pass filter is a 4th order Butterworth filter used as an anti-aliasing filter to prepare the signal for an analog-to-digital converter.
+The low pass filter is a 4th order Butterworth filter used as an anti-aliasing filter to prepare the signal for an analog-to-digital converter. As the filter is designed around only 1 operational amplifier and basic passive components (R and C), the filter is based off a voltage-controlled voltage-source (VCVS) design.
 
 The pass-band of the filter is 300 Hz to 5 kHz, and it is generally flat to 2 dB (excluding the 120 Hz tone filtered out previously). Based off the specifications, the order for the Butterworth filter (chosen for its simplicity) was derived to be 4.
 
-The electronic design is based off the 2nd Sallen and Key stage design (i.e k = 2). All R and C values were derived via deriving the 4th order system equation and the k = 2 S&K design parameters.
+The electronic design is based off the 2nd Sallen and Key Filter stage design (i.e k = 2). As the filter is 2 stages, there are 2 Q values. They were derived to be 1.31 and 0.541 respectively. All R and C values were derived via deriving the 4th order system equation and the k = 2 S&K design parameters.
 
 The buffer amplifier (i.e gain of 1 amplifier) at the end prevents the load from changing the filter’s frequency response and ensures the filter behaves exactly as designed. In essence, the buffer amplifier guarantees the filter response is independent of the following part of the circuit (in this case, an ADC).
