@@ -6,10 +6,10 @@ ___
 ### Design and Testing
 The design was simulated and analyzed in **LTspice** using Bode magnitude and phase plots to verify frequency-domain performance and phase behavior. Both the complete circuit and the magnitude/phase response can be seen below:
 
-![Filter Circuit](images/circuit.png)
+![Filter Circuit](Images/circuit.png)
 
 
-![Magnitude and Phase Response](images/bode-plot.png)
+![Magnitude and Phase Response](Images/bode-plot.png)
 
 ___
 ### Notch Filter
@@ -18,4 +18,4 @@ The notch filter utilized is a Fliege notch filter. The reason as to why the Fli
 2. The Q of the filter can be adjusted independently from the center frequency by using two noncritical resistors of the same value
 3. The center frequency of the filter can be adjusted over a narrow range without seriously eroding the depth of the notch.
 
-As seen 
+As seen in the magnitude response picture above, it is clear that the notch filter does a good job in filtering the 120Hz tone.
