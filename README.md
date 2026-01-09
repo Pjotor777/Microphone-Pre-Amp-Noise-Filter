@@ -4,7 +4,7 @@ This project implements a cascaded analog filter system consisting of:
 2. A 4th-order Butterworth low-pass filter (LPF) to limit bandwidth and prevent aliasing before sampling or further digital processing
 ___
 ### Design and Testing
-The design was simulated and analyzed in **LTspice** using Bode magnitude and phase plots to verify frequency-domain performance and phase behavior. Both the complete circuit and the magnitude/phase response can be seen below:
+The design was simulated and analyzed in **LTspice** using Bode magnitude and phase plots to verify frequency-domain performance and phase behavior. MATLAB was used to test the general filter response before creating the circuit in LTSPICE. Both the complete circuit and the magnitude/phase response can be seen below. If they are low quality, simply click on the image itself for better resolution:
 
 ![Filter Circuit](Images/circuit.PNG)
 
@@ -28,4 +28,4 @@ The pass-band of the filter is 300 Hz to 5 kHz, and it is generally flat to 2 dB
 
 The electronic design is based off the 2nd Sallen and Key stage design (i.e k = 2). All R and C values were derived via deriving the 4th order system equation and the k = 2 S&K design parameters.
 
-The buffer amplifier (i.e gain of 1 apmplifier) at the end prevents the load from changing the filter’s frequency response and ensures the filter behaves exactly as designed. In essence, the buffer amplifier guarantees the filter response is independent of the following part of the circuit (in this case, an ADC).
+The buffer amplifier (i.e gain of 1 amplifier) at the end prevents the load from changing the filter’s frequency response and ensures the filter behaves exactly as designed. In essence, the buffer amplifier guarantees the filter response is independent of the following part of the circuit (in this case, an ADC).
