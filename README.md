@@ -6,10 +6,10 @@ ___
 ### Design and Testing
 The design was simulated and analyzed in **LTspice** using Bode magnitude and phase plots to verify frequency-domain performance and phase behavior. Both the complete circuit and the magnitude/phase response can be seen below:
 
-![Filter Circuit](Images/circuit.png)
+![Filter Circuit](Images/circuit.PNG)
 
 
-![Magnitude and Phase Response](Images/bode-plot.png)
+![Magnitude and Phase Response](Images/bode-plot.PNG)
 
 ___
 ### Notch Filter
